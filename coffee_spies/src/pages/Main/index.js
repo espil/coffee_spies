@@ -27,6 +27,7 @@ axios.get('/user?ID=')
     // always executed
   });
 
+
 //shortcut imports
 import {Add, Cancel, CreatePostButton, EmailInput, PostInput, FeedPost, Header, PostDescInput, ProfileSelect, ProfileUpload, LoginButton} from '../../comps';
 
@@ -48,16 +49,23 @@ const Cont = styled.div`
   flex-direction: column;
 `;
 
+
 const Main = () => {
-    return <Container>
-      <Header />
-      <Cont>
-        <div className="scrollview">
-          <FeedPost />
-          <FeedPost />
-        </div>
-      </Cont>
-    </Container>
+  return <Container>
+    <Header />
+    <Cont>
+      <div className="scrollview">
+        <FeedPost />
+        <FeedPost />
+      </div>
+    </Cont>
+  </Container>
 }
+
+export default Main;
+
+
+
+
 
 export default Main;
