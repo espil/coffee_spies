@@ -58,7 +58,6 @@ const Social = styled.div`
 display: flex;
 `;
 
-
 const FeedPost = ({title, desc, like, comment}) => {
 return <Container>
     <UserPost>
